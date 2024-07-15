@@ -19,7 +19,17 @@ public class TestHome {
 
     public static final By selectRegion = By.xpath("//*[@id='regionSelect']/option[2]");
 
-    public  static final By date = By.xpath("/html/body/main/section[1]/div/section[1]/div/div[2]/div/div/div[1]/input");
+    public  static final By selectCourse = By.xpath("/html/body/main/section[1]/div/section[1]/div/div[3]/div[1]/div/div[2]/a");
 
     public static final By category = By.xpath("/html/body/main/section[1]/div/section[1]/div/div[1]/div[2]/button[2]");
+
+    public static final By registering = By.xpath("/html/body/main/section[1]/div/div[2]/div[2]/div[7]/a/span[1]");
+
+    public static final By idField = By.xpath("//*[@id='Input_Username']");
+
+    public static final By passwordField = By.xpath("//*[@id='Input_Password']");
+
+    public static final By checkbox = By.xpath("//*[@id='account']/div/div[3]");
+
+    public static final By signInButton = By.xpath("//*[@id='account']/div/div[5]/button");
 }

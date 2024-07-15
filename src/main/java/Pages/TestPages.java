@@ -60,9 +60,9 @@ public class TestPages {
         sregion.click();
     }
 
-    public void ClickOnDate() {
-        WebElement dates = driver.findElement(date);
-        dates.click();
+    public void ClickOnCourse() {
+        WebElement course = driver.findElement(selectCourse);
+        course.click();
     }
 
     public void ClickOnCategory() {
@@ -73,5 +73,38 @@ public class TestPages {
     public void scrollToPosition(int x, int y) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollTo(arguments[0], arguments[1]);", x, y);
+    }
+
+    public void Registring() {
+        WebElement register = driver.findElement(registering);
+        register.click();
+    }
+
+    public void ID() {
+        WebElement ID = driver.findElement(idField);
+        ID.click();
+    }
+
+    public void EnterID() {
+        driver.findElement(idField).sendKeys("your ID");
+    }
+
+    public void Password() {
+        WebElement Password = driver.findElement(passwordField);
+        Password.sendKeys();
+    }
+
+    public void EnterPassword() {
+        driver.findElement(passwordField).sendKeys("your Password");
+    }
+
+    public void Checkbox() {
+        WebElement checkboxes = driver.findElement(checkbox);
+        checkboxes.click();
+    }
+
+    public void SignInButton() {
+        WebElement signin = driver.findElement(signInButton);
+        signin.click();
     }
 }

@@ -26,20 +26,24 @@ public class HomePageTest extends BaseClass {
        homepage.SelectFromRegion();
         Thread.sleep(2000);
         homepage.ClickOnCategory();
-//        homepage.ClickOnDate();
-        Thread.sleep(2000);
-    }
-
-
-    @Test
-    public void BootcampTestMethod() throws InterruptedException {
-        TestPages homepage = new TestPages(driver);
-        homepage.OpenUrl();
-        homepage.ChangeLanguage();
-        Thread.sleep(2000);
-        homepage.PressBootcamp();
         homepage.scrollToPosition(0, 600);
         Thread.sleep(2000);
+        homepage.ClickOnCourse();
+        Thread.sleep(2000);
+        homepage.scrollToPosition(0, 700);
+        Thread.sleep(2000);
+        homepage.Registring();
+        Thread.sleep(2000);
+       // homepage.ID();
+        Thread.sleep(2000);
+        homepage.EnterID();
+        Thread.sleep(2000);
+        homepage.EnterPassword();
+        Thread.sleep(2000);
+        homepage.Checkbox();
+        Thread.sleep(2000);
+        homepage.SignInButton();
+        Thread.sleep(3000);
 
     }
 }
